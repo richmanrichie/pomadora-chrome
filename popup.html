@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="form" style="display: none;">
+        <div class="title">Setup</div>
+        <div class="input-container ic1">
+          <input id="pomadora" class="input" type="number" placeholder=" " />
+          <div class="cut"></div>
+          <label for="firstname" class="placeholder">Pomadora</label>
+        </div>
+        <div class="input-container ic2">
+          <input id="shortbreak" class="input" type="number" placeholder=" " />
+          <div class="cut"></div>
+          <label for="shortbreak" class="placeholder">Short Break</label>
+        </div>
+        <div class="input-container ic2">
+          <input id="longbreak" class="input" type="number" placeholder=" " />
+          <div class="cut cut-short"></div>
+          <label for="longbreak" class="placeholder">Long Break</label>
+        </div>
+        <div class="input-container ic2">
+            <input id="count" class="input" type="number" placeholder=" " />
+            <div class="cut cut-short"></div>
+            <label for="count" class="placeholder">Total</label>
+        </div>
+      
+    </div>
+
+    <div>
+        <button type="button" id="pomad-button-click" class="submit">Submit</button>
+        <button type="button" id="pomad-button-stop" class="submit">Stop</button>
+    </div>
+
+    <div class="clock">
+        <div class="hours">
+            <div class="first">
+            <div id="hr_1" class="number">0</div>
+            </div>
+            <div class="second">
+            <div id="hr_2" class="number">0</div>
+            </div>
+        </div>
+        <div class="tick">:</div>
+        <div class="minutes">
+            <div class="first">
+            <div id="min_1" class="number">0</div>
+            </div>
+            <div class="second">
+            <div id="min_2" class="number">0</div>
+            </div>
+        </div>
+        <div class="tick">:</div>
+        <div class="seconds">
+            <div class="first">
+            <div id="sec_1" class="number">0</div>
+            </div>
+            <div class="second infinite">
+            <div id="sec_2" class="number">0</div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="popup.js"></script>
+</html>
